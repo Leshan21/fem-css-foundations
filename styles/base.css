@@ -1,0 +1,18 @@
+:root {
+    --color-primary: #FF7B54;
+    --color-text-on-primary: #FFFFFF;
+
+    --font-family: "Inter", sans-serif;
+}
+
+
+body {
+    background-color: var(--color-primary); 
+    color: var(--color-text-on-primary);
+    font-family: var(--font-family);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
