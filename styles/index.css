@@ -11,6 +11,14 @@
 
 }
 
+.home .menu path {
+    fill: var(--color-text-on-primary);
+}
+
+.home .close path {
+    fill: var(--color-text-on-primary);
+}
+
 @media(width < 1220px) {
     .home .main__heading {
         font-size: 70px;
