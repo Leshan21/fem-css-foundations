@@ -1,18 +1,50 @@
 :root {
-    --color-primary: #FF7B54;
-    --color-text-on-primary: #FFFFFF;
+  --color-primary: #ff7b54;
+  --color-text-on-primary: #ffffff;
 
-    --font-family: "Inter", sans-serif;
+  --font-family: "Inter", sans-serif;
 }
 
-
 body {
-    background-color: var(--color-primary); 
-    color: var(--color-text-on-primary);
-    font-family: var(--font-family);
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  font-family: var(--font-family);
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 34px;
+  grid-template-rows: 1fr;
+  align-items: center;
+  grid-template-areas: "logo nav shopping-cart";
+  padding: 0 60px; /* top/bottom righ/left */
+}
+
+.header__link{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+header img {
+    grid-area: shopping-cart;
+}
+
+.nav {
+  display: inline-block;
+  justify-self: end;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+}
+
+.nav__list-item {
+  margin: 0 36px 0 0; /* top right bottom left */
+  font-size: 20px;
 }
